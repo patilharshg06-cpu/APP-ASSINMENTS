@@ -1,0 +1,28 @@
+with open ("input.txt","w")as file:
+    file.write("I am Harshwardhan")
+    file.write("I am Student of MIT ADT")
+    file.write("sy 13")
+    file.write("Roll no. 13")
+
+
+with open("input.txt","r")as file:
+    lines = file.readlines()
+    
+    line_count = len(lines)
+    
+    first_two_lines=lines[:2]
+    
+print("Total numbers of lines:",line_count)
+
+print("\nFirst two lines:")
+for line in first_two_lines:
+    print(line.strip())
+    
+    
+with open ("output.txt","w")as file:
+    file.writelines(first_two_lines)
+    print("\nFirst two lines successfully written to output.txt")
+    
+     
+
+    
